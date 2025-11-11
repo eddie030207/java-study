@@ -1,4 +1,4 @@
-package generic.test.ex3;
+package generic.ex3;
 
 import generic.animal.Cat;
 import generic.animal.Dog;
@@ -15,11 +15,12 @@ public class AnimalHospitalMainV0 {
         dogHospital.set(dog);
         dogHospital.checkUp();
 
+        // 고양이 병원
         catHospital.set(cat);
         catHospital.checkUp();
 
         // 문제 1 : 개 병원에 고양이 전달
-        // dogHospital(cat); // 다른 타입 입력 : 컴파일 오류
+        // dogHospital.set(cat); // 다른 타입 입력 : 컴파일 오류
 
         // 문제 2 : 개 타입 변환
         dogHospital.set(dog);
