@@ -16,6 +16,5 @@ public class MyHashSetV0Main {
 
         System.out.println("set.contains(3) = " + set.contains(3));;
         System.out.println("set.contains(99) = " + set.contains(99));
-
     }
 }
