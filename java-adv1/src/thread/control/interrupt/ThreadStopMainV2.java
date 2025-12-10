@@ -23,7 +23,7 @@ public class ThreadStopMainV2 {
             try {
                 while (true) {
                     log("작업 중");
-                    Thread.sleep(3000);
+                    Thread.sleep(3000); // interrupt flag가 true 상태면, 이 코드가 실행될 때 InterruptedException을 던진다.
                 }
             } catch (InterruptedException e) {
                 log("work 스레드 인터럽트 상태2 = " + Thread.currentThread().isInterrupted());
